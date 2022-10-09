@@ -1,0 +1,15 @@
+
+### Добавить нового пользователя
+curl -X POST http://localhost:8080/person -d 'email=Joe@mail.ru' -d 'phone=7667766'  -d 'firstName=Joe'  -d 'lastName=Joev' 
+
+### Вывести всех пользователей
+curl http://localhost:8080/person 
+
+### Вывести пользователя по id
+curl  http://localhost:8080/person/2
+
+### Удалить пользователя по id
+curl -X DELETE http://localhost:8080/person/2
+
+### Обновить запись пользователя по id
+curl -X PUT http://localhost:8080/person/2 -d 'email=Joe' -d 'phone=Joe'  -d 'firstName=Joe' -d 'lastName=11' 
